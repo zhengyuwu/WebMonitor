@@ -122,7 +122,7 @@ class webMonitor:
 
     # 多线程执行网站页面的md5计算，并将计算结果保存在store中
     def mulCalMd5(self, urls, store={}):
-        # 分组url，由不同的线程执行md5计算，存储结构：{线程No:[url,'http://202.105.213.21',...]}
+        # 分组url，由不同的线程执行md5计算，存储结构：{线程No:['url1','url2',...]}
         urlSplit = {}
 
         # 线程编号
